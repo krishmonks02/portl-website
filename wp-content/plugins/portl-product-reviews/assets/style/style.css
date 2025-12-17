@@ -1,0 +1,233 @@
+/* Target all input fields in plugin pages */
+.text-danger{
+    color: red;
+}
+
+.add-review-form input,
+.add-review-form select,
+.add-review-form textarea {
+    width: 100%;
+    max-width: 500px !important;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Optional: For labels and spacing */
+.add-review-form label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.add-review-form .form-group {
+    margin-bottom: 16px;
+}
+
+.wp-list-table th, .wp-list-table td {
+    vertical-align: top;
+}
+
+.all-review-form .all-check-input,
+.review-approval-form .all-check-input{
+    padding-bottom: 6px !important;
+    padding-top: 8px !important;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.search-filter-form .button{
+    min-width: 64px !important;
+}
+
+.edit-review-form input,
+.edit-review-form select,
+.edit-review-form textarea {
+    width: 100%;
+    max-width: 500px !important;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* Modal styling */
+#review-modal, #approve-review-modal {
+    display: none;
+    position: fixed; /* backdrop container */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent backdrop */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow-y: auto; /* allow scrolling if modal is tall */
+}
+
+#review-modal .modal-body, #approve-review-modal .modal-body {
+    background: #fff;
+    padding: 20px;
+    max-width: 505px;
+    margin: auto;
+    border-radius: 4px;
+    margin-top: 120px;
+}
+
+.preview-btn{
+    height: 20px;
+    padding: 0px 5px !important;
+    height: 20px !important;
+    min-height: auto !important;
+    line-height: normal !important;
+}
+
+.tr-priority{
+    background-color: #ffefc4 !important;
+    font-weight: 700;
+}
+
+.error-mssg{
+    border: 1px solid grey;
+    color: red;
+    padding: 5px;
+    width: 100%;
+}
+
+.spinner{
+    visibility: visible !important;
+    margin: -3px -2px 0px;
+    float: left;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.wp-admin input[type=file] {
+    padding: 3px 2px !important;
+}
+
+/* Hide Elementor or custom plugin notices */
+.e-notice,
+.e-notice--warning,
+.e-notice--dismissible {
+    display: none !important;
+}
+
+.dashboard-page table td{
+    padding: 15px !important;
+}
+
+/* Target .tablenav pagination */
+.tablenav .styled-pagination {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.tablenav .styled-pagination a,
+.tablenav .styled-pagination span {
+    color: #0073aa;
+    padding: 6px 10px;
+    margin: 0 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.tablenav .styled-pagination a:hover {
+    background: #f3f4f5;
+    border-color: #ccd0d4;
+    color: #005177;
+}
+
+.tablenav .styled-pagination .current {
+    background: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+    font-weight: bold;
+}
+
+@media(max-width: 782.98px){
+    .all-review-page form .button,
+    .review-approval-page form .button{
+        margin-bottom: 0px !important;
+    }
+    .all-review-page .tablenav .view-switch, .tablenav.top .actions {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .all-review-page .search-filter-form{
+        flex-direction: column-reverse;
+    }
+
+    .search-input-group{
+        width: 100%;
+    }
+    .search-input-field{
+        width: 100%;
+    }
+
+    .search-filter-form .button{
+        min-width: 75px !important;
+    }
+
+    .all-review-page .widefat thead th:nth-child(6),
+    .all-review-page .widefat tbody td:nth-child(6), /* Approved */
+    .all-review-page .widefat thead th:nth-child(7),
+    .all-review-page .widefat tbody td:nth-child(7), /* Author */
+    .all-review-page .widefat thead th:nth-child(8),
+    .all-review-page .widefat tbody td:nth-child(8), /* Deleted */
+    .all-review-page .widefat thead th:nth-child(9),
+    .all-review-page .widefat tbody td:nth-child(9)  /* Added On */ {
+        display: none;
+    }
+
+    .review-approval-page .widefat thead th:nth-child(6),
+    .review-approval-page .widefat tbody td:nth-child(6),
+    .review-approval-page .widefat thead th:nth-child(7),
+    .review-approval-page .widefat tbody td:nth-child(7){
+        display: none;
+    }
+
+    .edit-review-form .close-modal{
+        padding: 0px 10px !important;
+    }
+}
+
+@media(max-width: 483.98px){
+    .all-review-page .input-group{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .all-review-page .widefat thead th:nth-child(5),
+    .all-review-page .widefat tbody td:nth-child(5){
+        display: none;
+    }
+
+    .review-approval-page .widefat thead th:nth-child(5),
+    .review-approval-page .widefat tbody td:nth-child(5){
+        display: none;
+    }
+}

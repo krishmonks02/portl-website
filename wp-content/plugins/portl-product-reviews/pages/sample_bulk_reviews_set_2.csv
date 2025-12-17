@@ -1,0 +1,6 @@
+customer_name,customer_email,review_description,ratings,review_source,review_link,uploaded_image_links,uploaded_video_links
+David King,david@example.com,"Very decent performance.",4,youtube,https://example.com/review/888,,"https://example.com/video6.mp4"
+Priya Verma,priya@example.com,"Didn’t meet expectations.",2,twitter,,,
+Arjun Singh,arjun@example.com,"Smooth experience overall.",4.2,linkedin,https://example.com/review/122,"https://example.com/image6.jpg",
+Nina Roy,nina@example.com,"Received defective piece.",1.5,google,,"https://example.com/image7.png","https://example.com/video7.ogg"
+Ethan Ray,ethan@example.com,"Five stars from me!",5,instagram,https://example.com/review/777,"https://example.com/image8.jpeg","https://example.com/video8.webm"

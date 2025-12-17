@@ -1,0 +1,6 @@
+customer_name,customer_email,review_description,ratings,review_source,review_link,uploaded_image_links,uploaded_video_links
+Sara Black,sara@example.com,"Stylish and affordable.",3.5,facebook,https://example.com/review/321,"https://example.com/image4.jpg",
+Liam Blue,liam@example.com,"Packaging was damaged.",2,google,,,"https://example.com/video2.mp4"
+Emily Rose,emily@example.com,"I will purchase again!",5,instagram,https://example.com/review/654,"https://example.com/image5.png","https://example.com/video5.webm"
+Kevin Hart,kevin@example.com,"Worth the price.",4.2,linkedin,https://example.com/review/999,"https://example.com/image9.jpeg",
+Amrita Das,amrita@example.com,"Bad customer support.",1.5,twitter,,"https://example.com/image10.webp","https://example.com/video10.ogg"

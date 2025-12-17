@@ -1,0 +1,6 @@
+customer_name,customer_email,review_description,ratings,review_source,review_link,uploaded_image_links,uploaded_video_links
+John Doe,john@example.com,"Great product! Highly recommend.",4.5,instagram,https://example.com/review/123,"https://example.com/image1.jpg","https://example.com/video1.mp4"
+Jane Smith,jane@example.com,"Not bad but could improve.",3,google,,"https://example.com/image2.png","http://localwww.portl.co/wp-content/uploads/2025/06/1920x1080-homepage-banner-1.mp4"
+Bob Brown,bob@example.com,"Loved it!",5,facebook,https://example.com/review/456,,"https://example.com/video4.ogg"
+Alice Green,alice@example.com,"Average quality.",2.5,twitter,https://example.com/review/789,"https://example.com/image3.webp",
+Tom White,tom@example.com,"Exceeded expectations.",4,linkedin,,,
