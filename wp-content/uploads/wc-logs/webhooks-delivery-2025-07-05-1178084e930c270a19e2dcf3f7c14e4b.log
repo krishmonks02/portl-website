@@ -1,0 +1,520 @@
+2025-07-05T05:02:48+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 18ac769031217c759a052498910d98b5
+            [Date] => Jul 5, 2025 @ 5:02
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_created
+            [Duration] => 1.62788
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => cis6UxUpHiteHmXBM5odir9bXLQPURze99265JnMHzQ=
+                            [X-WC-Webhook-ID] => 3
+                            [X-WC-Webhook-Delivery-ID] => 18ac769031217c759a052498910d98b5
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 05:02:48 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95a44ff00bb5c18d-BLR
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-07-05T11:50:18+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => d18f3c3089ab7bb098be14c81ffff83d
+            [Date] => Jul 5, 2025 @ 11:50
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_created
+            [Duration] => 1.37386
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => Qj7Ahr7fXw8tUX5mGxOVEx3sCl8mLbKNU5Fe64u2wFk=
+                            [X-WC-Webhook-ID] => 3
+                            [X-WC-Webhook-Delivery-ID] => d18f3c3089ab7bb098be14c81ffff83d
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 11:50:18 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95a6a4db7ef52852-BOM
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-07-05T13:18:25+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 60eb780f4e24221f65fd2dbce72d734a
+            [Date] => Jul 5, 2025 @ 13:18
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_updated
+            [Duration] => 1.16952
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => +yJkE+69QN0DEj4zkuk6CgDRGtCndvqjIVu4wWxTyYE=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 60eb780f4e24221f65fd2dbce72d734a
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 13:18:25 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95a725f24cb07aa2-BOM
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-07-05T13:21:17+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1781e52d467b7536b5fe3e72324a6389
+            [Date] => Jul 5, 2025 @ 13:21
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_updated
+            [Duration] => 1.2342
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => hHAQktVDMo8xgPIBLFpKMyL0GjgFMRpKkt66U8bh+So=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 1781e52d467b7536b5fe3e72324a6389
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 13:21:17 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95a72a2458ca85d2-BOM
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-07-05T13:21:17+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1781e52d467b7536b5fe3e72324a6389
+            [Date] => Jul 5, 2025 @ 13:21
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_updated
+            [Duration] => 0.17248
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => hHAQktVDMo8xgPIBLFpKMyL0GjgFMRpKkt66U8bh+So=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 1781e52d467b7536b5fe3e72324a6389
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 13:21:17 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95a72a2629e9c1a4-BLR
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-07-05T13:22:19+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => e47e4eef31fb79239553cf356adcc969
+            [Date] => Jul 5, 2025 @ 13:22
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_updated
+            [Duration] => 0.99273
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => Nkbj5EM/MDP7RGRY1TAgaFDQ6UXLF8OAsw1PShj6PK4=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => e47e4eef31fb79239553cf356adcc969
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 13:22:19 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95a72ba54a64b080-BLR
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-07-05T13:24:18+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => bb197bbe543164e4ad2d67c87186ccae
+            [Date] => Jul 5, 2025 @ 13:24
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_updated
+            [Duration] => 1.01783
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => WcjOgvTAY38sW3XBeFW1bcK7jS+KQW51DzfnHGuAup0=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => bb197bbe543164e4ad2d67c87186ccae
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 13:24:18 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95a72e9178cec467-BLR
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-07-05T13:26:17+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => d6a866771a8432719a9123030aeb74cc
+            [Date] => Jul 5, 2025 @ 13:26
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_created
+            [Duration] => 0.99025
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => b6wzHMWZDYK9LAmFU9PhpXA6zq02cydFwjVEQjON79c=
+                            [X-WC-Webhook-ID] => 3
+                            [X-WC-Webhook-Delivery-ID] => d6a866771a8432719a9123030aeb74cc
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 13:26:17 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95a73173d984c1ce-BLR
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-07-05T13:51:21+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => cca32e1769bdf21983947e904d490ae6
+            [Date] => Jul 5, 2025 @ 13:51
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_created
+            [Duration] => 0.97852
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => +C/3wk/h0m97YwLkIu1pcxwAon0InVKazIyKVqUHdGA=
+                            [X-WC-Webhook-ID] => 3
+                            [X-WC-Webhook-Delivery-ID] => cca32e1769bdf21983947e904d490ae6
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 13:51:21 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95a7562cfcf2755c-BLR
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-07-05T23:34:38+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1566109eb4d8f0018924bdc8225f03c9
+            [Date] => Jul 5, 2025 @ 23:34
+            [URL] => https://live-mt-server.wati.io/395525/api/v1/woocommerce/webhookOrders/order_created
+            [Duration] => 1.05079
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/8.7.0 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://portl.co/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => /dNvJHmnV8o8rAurStW5uZVYWpLM//klHZJ1/erojXQ=
+                            [X-WC-Webhook-ID] => 3
+                            [X-WC-Webhook-Delivery-ID] => 1566109eb4d8f0018924bdc8225f03c9
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Jul 2025 23:34:38 GMT
+                                    [content-type] => application/json; charset=utf-8
+                                    [cf-ray] => 95aaac99bd6fc469-BLR
+                                    [vary] => Accept-Encoding
+                                    [content-encoding] => gzip
+                                    [cf-cache-status] => DYNAMIC
+                                    [server] => cloudflare
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)

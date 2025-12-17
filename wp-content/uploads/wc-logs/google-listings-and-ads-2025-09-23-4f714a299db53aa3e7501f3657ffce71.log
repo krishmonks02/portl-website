@@ -1,0 +1,18 @@
+2025-09-23T12:51:15+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 5610): ["New"].
+2025-09-23T12:51:15+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 5611) because it does not pass validation: {"woocommerce_id":5611,"errors":["[description] This value should not be blank."]}
+2025-09-23T12:51:15+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 5610): ["New"].
+2025-09-23T12:51:15+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 5612) because it does not pass validation: {"woocommerce_id":5612,"errors":["[description] This value should not be blank."]}
+2025-09-23T12:51:15+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 5610): ["New"].
+2025-09-23T12:51:15+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 5653) because it does not pass validation: {"woocommerce_id":5653,"errors":["[description] This value should not be blank."]}
+2025-09-23T12:52:16+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 5610): ["New"].
+2025-09-23T12:52:16+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 5611) because it does not pass validation: {"woocommerce_id":5611,"errors":["[description] This value should not be blank."]}
+2025-09-23T12:52:16+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 5610): ["New"].
+2025-09-23T12:52:16+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 5612) because it does not pass validation: {"woocommerce_id":5612,"errors":["[description] This value should not be blank."]}
+2025-09-23T12:52:16+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 5610): ["New"].
+2025-09-23T12:52:16+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 5653) because it does not pass validation: {"woocommerce_id":5653,"errors":["[description] This value should not be blank."]}
+2025-09-23T12:55:17+00:00 ERROR Automattic\WooCommerce\GoogleListingsAndAds\Notes\NoteInitializer::add_notes {
+    "message": "Please upgrade your plugin. It's currently using an unsupported Google Ads API version.",
+    "code": 12,
+    "status": "UNIMPLEMENTED",
+    "details": []
+}

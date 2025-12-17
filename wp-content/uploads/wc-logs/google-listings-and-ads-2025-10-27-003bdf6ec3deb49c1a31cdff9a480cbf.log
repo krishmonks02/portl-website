@@ -1,0 +1,6 @@
+2025-10-27T13:18:23+00:00 ERROR Automattic\WooCommerce\GoogleListingsAndAds\Notes\NoteInitializer::add_notes {
+    "message": "Please upgrade your plugin. It's currently using an unsupported Google Ads API version.",
+    "code": 12,
+    "status": "UNIMPLEMENTED",
+    "details": []
+}

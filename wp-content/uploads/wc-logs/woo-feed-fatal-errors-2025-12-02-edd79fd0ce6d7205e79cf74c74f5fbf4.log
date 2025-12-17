@@ -1,0 +1,64 @@
+2025-12-02T10:02:13+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:13+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:13+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:14+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:14+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:15+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:16+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:16+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:17+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:17+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:18+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:20+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:21+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:23+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:27+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:27+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:27+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:02:30+00:00 CRITICAL syntax error, unexpected end of file in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 605
+ CONTEXT: {"data":null}
+2025-12-02T10:03:03+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php:599
+Stack trace:
+#0 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/class-wp-hook.php(324): {closure}()
+#1 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#2 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/plugins/woocommerce/templates/checkout/thankyou.php(82): do_action()
+#4 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/home/1409177.c...')
+#5 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(335): wc_get_template()
+#6 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(65): WC_Shortcode_Checkout::order_received()
+#7 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output()
+#8 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper()
+#9 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/shortcodes.php(434): WC_Shortcodes::checkout()
+#10 [internal function]: do_shortcode_tag()
+#11 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/shortcodes.php(273): preg_replace_callback()
+#12 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/class-wp-hook.php(324): do_shortcode()
+#13 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#14 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/post-template.php(256): apply_filters()
+#15 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/template-parts/content-page.php(28): the_content()
+#16 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/template.php(812): require('/home/1409177.c...')
+#17 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/template.php(745): load_template()
+#18 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/general-template.php(206): locate_template()
+#19 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/page.php(27): get_template_part()
+#20 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-includes/template-loader.php(106): include('/home/1409177.c...')
+#21 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-blog-header.php(19): require_once('/home/1409177.c...')
+#22 /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/index.php(17): require('/home/1409177.c...')
+#23 {main}
+  thrown in /home/1409177.cloudwaysapps.com/ybyggtdqjj/public_html/wp-content/themes/hestia/functions.php on line 599
+ CONTEXT: {"data":null}

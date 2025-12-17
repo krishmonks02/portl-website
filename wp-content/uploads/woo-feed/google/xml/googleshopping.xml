@@ -1,0 +1,101 @@
+<rss xmlns:g="http://base.google.com/ns/1.0" xmlns:c="http://base.google.com/cns/1.0" version="2.0">
+<channel>
+<title>
+<![CDATA[ Portl.co ]]>
+</title>
+<link><![CDATA[ http://localwww.portl.com ]]></link>
+<description><![CDATA[ CTX Feed - This product feed is generated with the CTX Feed - WooCommerce Product Feed Manager plugin by WebAppick.com. For all your support questions check out our plugin Docs on https://webappick.com/docs or e-mail to: support@webappick.com ]]></description><item>
+<g:id>5653</g:id>
+<g:title>UltraGym - Performance Combo</g:title>
+<g:description></g:description>
+<g:item_group_id>5610</g:item_group_id>
+<link>http://localwww.portl.com/product/ultragym/?attribute_type=Performance+Combo</link>
+<g:product_type>New</g:product_type>
+<g:google_product_category></g:google_product_category>
+<g:image_link>http://localwww.portl.com/wp-content/uploads/2024/10/ultragym_thumbnail.jpg</g:image_link>
+<g:condition>new</g:condition>
+<g:availability>in_stock</g:availability>
+<g:price>102,990 INR</g:price>
+<g:sale_price>69,999 INR</g:sale_price>
+<g:mpn></g:mpn>
+<g:brand>Portl</g:brand>
+<g:canonical_link>http://localwww.portl.com/product/ultragym/</g:canonical_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:identifier_exists>no</g:identifier_exists>
+</item>
+<item>
+<g:id>5611</g:id>
+<g:title>UltraGym - Starter</g:title>
+<g:description></g:description>
+<g:item_group_id>5610</g:item_group_id>
+<link>http://localwww.portl.com/product/ultragym/?attribute_type=Starter</link>
+<g:product_type>New</g:product_type>
+<g:google_product_category></g:google_product_category>
+<g:image_link>http://localwww.portl.com/wp-content/uploads/2024/10/ultragym_thumbnail.jpg</g:image_link>
+<g:condition>new</g:condition>
+<g:availability>in_stock</g:availability>
+<g:price>99,990 INR</g:price>
+<g:sale_price>62,990 INR</g:sale_price>
+<g:mpn></g:mpn>
+<g:brand>Portl</g:brand>
+<g:canonical_link>http://localwww.portl.com/product/ultragym/</g:canonical_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:identifier_exists>no</g:identifier_exists>
+</item>
+<item>
+<g:id>5612</g:id>
+<g:title>UltraGym - Ultimate Combo</g:title>
+<g:description></g:description>
+<g:item_group_id>5610</g:item_group_id>
+<link>http://localwww.portl.com/product/ultragym/?attribute_type=Ultimate+Combo</link>
+<g:product_type>New</g:product_type>
+<g:google_product_category></g:google_product_category>
+<g:image_link>http://localwww.portl.com/wp-content/uploads/2024/10/ultragym_thumbnail.jpg</g:image_link>
+<g:condition>new</g:condition>
+<g:availability>in_stock</g:availability>
+<g:price>116,990 INR</g:price>
+<g:sale_price>82,990 INR</g:sale_price>
+<g:mpn></g:mpn>
+<g:brand>Portl</g:brand>
+<g:canonical_link>http://localwww.portl.com/product/ultragym/</g:canonical_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:identifier_exists>no</g:identifier_exists>
+</item>
+<item>
+<g:id>2532</g:id>
+<g:title>The Portl Studio</g:title>
+<g:description></g:description>
+<g:item_group_id>2532</g:item_group_id>
+<link>http://localwww.portl.com/product/the-portl-studio/</link>
+<g:product_type>New</g:product_type>
+<g:google_product_category></g:google_product_category>
+<g:image_link>http://localwww.portl.com/wp-content/uploads/2021/11/4-1.jpg</g:image_link>
+<g:condition>new</g:condition>
+<g:availability>out_of_stock</g:availability>
+<g:price>147,500 INR</g:price>
+<g:sale_price>147,500 INR</g:sale_price>
+<g:mpn></g:mpn>
+<g:brand>Portl</g:brand>
+<g:canonical_link>http://localwww.portl.com/product/the-portl-studio/</g:canonical_link>
+<g:additional_image_link>http://localwww.portl.com/wp-content/uploads/2021/12/5-1-803x1024-1.jpg</g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:additional_image_link></g:additional_image_link>
+<g:identifier_exists>no</g:identifier_exists>
+</item>
+
+</channel>
+</rss>

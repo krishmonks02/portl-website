@@ -1,0 +1,2 @@
+[2022-04-07 12:15:15] wpdesk.DEBUG: Sender payload: {"click_action":"plugin_deactivation","plugin":"shopmagic-for-woocommerce\/shopMagic.php","plugin_name":"ShopMagic for WooCommerce","reason":"temporary_deactivation"} {"source":"wpdesk-sender"} []
+[2022-04-07 12:15:17] wpdesk.DEBUG: Sender response: {"headers":[],"body":"","response":{"code":false,"message":false},"cookies":[],"http_response":null} {"source":"wpdesk-sender"} []

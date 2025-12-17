@@ -1,0 +1,589 @@
+
+.zf-WpPopupContainer{
+    background: #fff;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+    letter-spacing: 0.3px;
+}
+.zf-WpMainWrap {
+
+    height: 540px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.zf-EmbedInner{
+    padding: 0 0 !important;
+}
+
+.forceColors {
+    margin: 0px !important;
+}
+.mce-title {
+    display: none;
+}
+.mce-window .mce-window-head{
+    min-height: auto;
+}
+.errorCont p {
+
+    color: #e65549;
+
+}
+
+.embedParameterValue {
+border: 1px solid #ccc;
+display: inline-block;
+width: 100%;
+padding-bottom: 7px;
+}
+/* first page */ 
+
+.zf-WpFormPermaWrap {
+    text-align: center;
+padding: 210px 25px;
+box-sizing: border-box;
+}
+.zf-WpFormPermaWrap p {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 50px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.zf-WpFormPermaWrap button {
+    border: 1px solid #24A68A;
+    background: #24A68A;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 12px;
+    display: inline-block;
+}
+.zf-WpFormPermaWrap span {
+    margin: 0 10px;
+    font-size: 15px;
+    color: #8c8c8c;
+}
+.zf-WpFormPermaWrap a {
+    font-size: 14px;
+    color: #24A68A;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.zf-WpFormPermaWrap img {
+    width: 45px;
+    margin-bottom: 5px;
+}
+.zf-WpBranding img{
+    width: 30%;
+}
+
+.zf-WpBranding {
+    padding: 0 15px 5px;
+text-align: right;
+display: inline-block;
+width: 100%;
+box-sizing: border-box;
+}
+
+/* Second Screen */
+
+.embeddedPublicLink {
+    margin-bottom: 5px;
+    padding: 0 25px;
+    position: relative;
+}
+.zf-WpEmbeddedHead {
+    padding: 0 22px;
+    border-bottom: 1px solid #ddd;
+    min-height: 40px;
+
+}
+
+.zf-WpEmbeddedHead h3 {
+    font-size: 16px;
+    padding-left: 40px;
+    margin: 0;
+    line-height: 28px;
+    color: #444;
+}
+.zf-WpEmbeddedHead img {
+    float: left;
+    width: 16px;
+    cursor: pointer;
+   margin-top: 9px;
+background: #fff;
+border: 1px solid #ccc;
+padding: 4px;
+}
+.zf-WpEmbeddedHead img:hover {
+    border: 1px solid #ccc;
+}
+.zf-WpEmbeddedContainer {
+    padding: 18px 0;
+}
+
+.embeddedPublicLink label {
+    font-size: 15px;
+}
+.embeddedPublicLink textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    resize: none;
+    margin: 12px 0 5px;
+    height: 70px;
+    font-size: 13px;
+}
+.embeddedPublicLink span {
+    font-size: 14px;
+    color: #505050;
+}
+.embeddedPublicLink label em{
+    color: #e65549;
+    font-size: 22px;
+    position: absolute;
+    margin: -5px 0px 0 3px;
+}
+.zf-WpSelectDomain label em {
+    color: #e65549;
+    font-size: 22px;
+    position: absolute;
+    margin: -5px 0px 0 3px;
+}
+.embeddedPublicLink span a{
+    color: #24A68A;
+}
+
+.errorCont p {
+    color: red;
+    margin-bottom: -6px;
+    margin-top: 6px;
+}
+
+button:focus { outline: none; }
+input:focus, textarea:focus, select:focus{ outline: none; border-color: #24A68A !important;}
+
+ .cusRadioButton span {
+    margin-right: 25px;
+}
+.cusRadioButton [type="radio"]:checked, .cusRadioButton [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.cusRadioButton [type="radio"]:checked + label, .cusRadioButton [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 26px !important;
+    cursor: pointer;
+    line-height: 16px;
+    display: inline-block;
+    color: #444;
+    margin: 0;
+    font-weight: normal;
+    font-size: 15px;
+}
+.cusRadioButton [type="radio"]:checked + label:before, .cusRadioButton [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #24A68A;
+    border-radius: 100%;
+    background: #fff;
+}
+.cusRadioButton [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.cusRadioButton [type="radio"]:checked + label:after, .cusRadioButton [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: #24A68A;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.cusRadioButton [type="radio"]:not(:checked) + label {
+    color: #444;
+}
+.cusRadioButton [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.embedFormUsing label {
+    font-size: 15px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+.cusRadioButton {
+    margin-bottom: 20px;
+}
+
+.embedFormInputField {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.embedFormInputField span {
+    width: 45%;
+    float: left;
+}
+.embedFormInputField label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+.embedFormInputField span:last-child {
+    float: right;
+}
+.embedFormInputField input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 7px 10px;
+    font-size: 13px;
+}
+.embedFormUsing {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.cusCheckBox [type="checkbox"] {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+.cusCheckBox [type="checkbox"] + label {
+   position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    line-height: 17px;
+    padding-left: 30px;
+    display: inline-block;
+    font-size: 15px;
+}
+.cusCheckBox [type="checkbox"]:not(:checked) + label:before, .cusCheckBox [type="checkbox"]:not(:checked) + .decisionCusCheckBox:before {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.cusCheckBox [type="checkbox"] + label::before{
+    
+    background-color: #fff;
+    border: 1px solid #24A68A;
+    box-sizing: content-box;
+    content: '';
+    color: #444;
+    margin-right: 7px;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+}
+.cusCheckBox [type="checkbox"]:checked + label::after{
+    content: '';
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+    transition: -webkit-transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+    transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+.cusCheckBox [type="checkbox"] + label::after {
+  background-color: transparent;
+    box-sizing: content-box;
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 7px;
+    height: 4px;
+    margin-top: calc(24px / -2 / 2 * 0.8);
+    border-style: solid;
+    border-color: #24A68A;
+    border-width: 0 0 2px 2px;
+    border-radius: 0;
+    -o-border-image: none;
+    border-image: none;
+    -webkit-transform: rotate(-45deg) scale(0);
+    transform: rotate(-45deg) scale(0);
+    transition: none;
+}
+
+.cusCheckBox {
+    margin-bottom: 3px;
+}
+.embedIncldeParamtrs span {
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 23px;
+    position: relative;
+    left: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.zf-wpFooter {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.zf-wpFooter button {
+ border: 1px solid #24A68A;
+    background: #24A68A;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 35px;
+    display: inline-block;
+}
+.zf-wpFooter .zf-WpBranding {
+    margin: 15px 0 0;
+} 
+.zf-WpEmbeddedWrap  {
+    padding: 0 25px;
+} 
+
+.embedField {
+       background: #f6f6f6;
+
+padding: 10px 20px;
+
+margin-bottom: 15px;
+
+display: inline-block;
+
+width: 100%;
+
+box-sizing: border-box;
+}
+.embedFiel_Col1 {
+    width: 240px;
+    float: left;
+    font-size: 14px;
+}
+.embedFiel_Col2 {
+    width: 200px;
+    float: left;
+    font-size: 14px;
+    margin-left: 67px;
+}
+.addParamaFeld {
+    width: 190px;
+    float: left;
+}
+.addParamaFeld input[type="text"] {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    font-size: 13px;
+}
+.addparamsWrap {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+    float: left;
+    padding: 0 20px;
+}
+.intArrow {
+    border-bottom: 1px dashed #afafaf;
+    font-size: 13px;
+    font-weight: 300;
+    width: 75px;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.intArrow .arrowImg {
+    background: url(paramtrArrow.jpg) no-repeat;
+   width: 5px;
+    height: 10px;
+    display: block;
+    top: -4px;
+    position: absolute;
+    right: 0;
+    opacity: 0.8;
+}
+.fiedPropPlus, .fiedPropMinus{ 
+   width: 24px;
+   height: 24px;
+   background: url(fieldprop-plus.png) no-repeat; 
+   background-size: contain;
+   margin-top: 2px; 
+   float: left; cursor: pointer; 
+   margin-left: 15px;
+   left: 0px !important;
+}
+.fiedPropMinus {
+    background: url(fieldprop-minus.png) no-repeat; background-size: contain;
+    margin-left: 8px;
+}
+
+.zf-WpFormRefresh {
+    padding-bottom: 0px;
+}
+.zf-WpFormRefresh p {
+    margin-bottom: 0;
+}
+
+.addParamBtn {
+    background: #fff;
+    border: 1px solid #24A68A;
+    border-radius: 30px;
+    padding: 8px 25px;
+    font-size: 15px;
+    color: #444;
+    cursor: pointer;
+    margin: 5px 0 10px 230px;
+    text-align: center;
+    display: inline-block;
+}
+.addParamBtn:hover {
+    background: #24A68A;
+    color: #fff;
+}
+.zf-WpSelectDomain.zf-WpSelectFrm{
+    padding: 18px 25px 10px;
+}
+
+
+.zf-WpSelectDomain {
+    padding: 165px 25px;
+    position: relative;
+}
+
+.zf-WpSelectDomain label {
+    display: block;
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.zf-WpSelectDomain select {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 35px;
+    font-size: 14px;
+    color: #444;
+}
+
+.embeddedPublicLink .zf-WpSelectDomain {
+    padding: 5px 0 30px 0;
+}
+
+.zf-wb-spinner { text-align: center;display: inline;position: relative;top: 2px;}
+.zf-wb-spinner > div {
+width: 11px;
+height: 11px;
+background-color: #333;
+
+border-radius: 100%;
+display: inline-block;
+-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.zf-wb-spinner .bounce1 {
+-webkit-animation-delay: -0.32s;
+animation-delay: -0.32s;
+}
+
+.zf-wb-spinner .bounce2 {
+-webkit-animation-delay: -0.16s;
+animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+0%, 80%, 100% { -webkit-transform: scale(0) }
+40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+0%, 80%, 100% {
+-webkit-transform: scale(0);
+transform: scale(0);
+} 40% {
+-webkit-transform: scale(1.0);
+transform: scale(1.0);
+}
+}
+.clearBoth {
+    clear: both;
+}
+
+.cusDropArrow {
+    border: solid #424040 !important;
+        border-top-width: medium;
+        border-right-width: medium;
+        border-bottom-width: medium;
+        border-left-width: medium;
+    border-width: 0 1px 1px 0 !important;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+    top: 207px;
+    position: absolute;
+    right: 39px;
+}
+.zf-WpEmbeddedWrap .zf-WpSelectFrm .cusDropArrow {
+  top: 60px;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+select:-moz-focusring {color: transparent !important;text-shadow: 0 0 0 #000 !important;}
+
+input[type="text"]:disabled {
+    background: #ececec;
+}
+.errorCont input, .errorCont textarea{ border: 1px solid #ff0000 !important;}

@@ -1,0 +1,9 @@
+2025-11-25T08:55:34+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Coupon\CouponHelper::get_channel_visibility Channel visibility forced to "dont-sync-and-show" for visibility unknown (Post ID: 6218).
+2025-11-25T08:55:54+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Coupon\CouponHelper::get_channel_visibility Channel visibility forced to "dont-sync-and-show" for visibility unknown (Post ID: 6219).
+2025-11-25T08:56:29+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Coupon\CouponHelper::get_channel_visibility Channel visibility forced to "dont-sync-and-show" for visibility unknown (Post ID: 6220).
+2025-11-25T13:40:26+00:00 ERROR Automattic\WooCommerce\GoogleListingsAndAds\Notes\NoteInitializer::add_notes {
+    "message": "Please upgrade your plugin. It's currently using an unsupported Google Ads API version.",
+    "code": 12,
+    "status": "UNIMPLEMENTED",
+    "details": []
+}

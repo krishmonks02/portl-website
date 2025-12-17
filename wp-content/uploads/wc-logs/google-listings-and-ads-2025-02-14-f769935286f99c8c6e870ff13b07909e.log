@@ -1,0 +1,2 @@
+2025-02-14T15:11:26+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 5708): ["Uncategorized"].
+2025-02-14T15:11:26+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 5708) because it does not pass validation: {"woocommerce_id":5708,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}

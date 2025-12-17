@@ -1,0 +1,479 @@
+        .body{ 
+            margin: 0; 
+            padding: 0;
+            font-family: Arimo, Helvetica, sans-serif;
+            
+        }
+        
+        input:focus, textarea:focus, select:focus{ outline: none !important; border-color: #24A68A !important; box-shadow: none !important;}
+        button:focus{outline: none;}
+        button{cursor: pointer;}
+        
+        .clearBoth{
+            clear:both;
+        }
+        
+        .flLeft{
+            float:left;
+        }
+        
+        .flRight{
+            float:right;
+        }
+
+        .zf-wb-containerWrapper{
+            letter-spacing:0.5px; 
+            width: 100%; 
+            padding: 0 10px;
+            padding-top: 10px;
+        }
+
+        .zf-wb-tabToggle{ 
+            width: 60%; 
+            margin:0 auto;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .zf-wb-tabToggle ul{
+            display: table;
+            width: 100%;
+            padding: 0;
+            margin: 0 !important;
+        }
+
+        .zf-wb-tabToggle ul li{
+            padding:6px 8px;
+            border-collapse: collapse;
+            border-width: 1px 0 1px 1px;
+            border-color: #d8d8d8;
+            border-style: solid;
+            overflow: hidden;
+            display: table-cell;
+            text-align: center;
+            cursor: pointer;
+            width: 50%;
+        }
+
+        .zf-wb-tabToggle ul li:last-child{
+            border-width: 1px;
+            -webkit-border-radius:0px 25px 25px 0; 
+            -moz-border-radius:0px 25px 25px 0;
+            border-radius:0px 25px 25px 0;
+        }
+
+        .zf-wb-tabToggle ul li:first-child{
+            -webkit-border-radius:25px 0 0 25px; 
+            -moz-border-radius:25px 0 0 25px; 
+            border-radius:25px 0 0 25px; 
+        }
+
+        .zf-wb-tabToggle ul li.active{
+            border:1px solid #007AFF;
+            background: #007AFF; 
+            color: #fff;
+            cursor: default;
+        }
+
+        .zf-wb-tabToggle ul li.active ~ li{
+            border-width: 1px 1px 1px 0;
+        }    
+
+        .zf-wb-outerWrapper{ font-size: 14px !important;}
+        .zf-wb-outerWrapper .zf-wb-desc{ font-size: 14px; color: #666; text-align: center; margin-bottom:20px;}
+        .zf-wb-outerWrapper .zf-wb-innerWrapper{ padding-bottom:20px;}
+        .zf-wb-outerWrapper .zf-wb-innerWrapper label{ display: block;margin-bottom:5px;}
+        .zf-wb-outerWrapper .zf-wb-innerWrapper label em{ color:#ff0000;font-size:16px;}
+        
+        .zf-wb-outerWrapper .zf-wb-innerWrapper input, .zf-wb-outerWrapper .zf-wb-innerWrapper textarea{ width: 100%; border:1px solid #d6d6d6;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;padding:4px; font-size: 14px;}
+        
+        .zf-wb-outerWrapper .zf-wb-twoColumns .zf-wb-innerWrapper{ width: 45%;}
+        
+        .zf-wb-errorCont input, .zf-wb-errorCont textarea{ border: 1px solid #ff0000 !important;}
+
+        .zf-wb-errorCont input:focus, .zf-wb-errorCont textarea:focus{ border:1px solid #ff0000 !important; -moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;}  
+
+        .zf-wb-errorCont p{font-size:13px !important; color:#ff0000; margin:0 !important; padding-top:3px;}
+        
+        .zf-wb-Fotter{ text-align:center; border-top: 1px solid #d6d6d6; padding:20px 0; padding-bottom: 10px; margin-top: -1px;}
+        .zf-wb-Fotter button{ padding:6px 18px; border: 1px solid #d6d6d6; font-size: 14px !important; margin: 0 5px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px; line-height: 21px !important;}
+        .zf-wb-blue{border: 1px solid #24A68A;background: #24A68A;color: #fff;border-radius: 3px;font-size: 14px;cursor: pointer;padding: 10px 12px;display: inline-block;}
+        .zf-wb-red{background:#f04b2f; color:#fff !important; border:1px solid #f04b2f !important;}
+        .zf-wb-green{background:#00A552; color:#fff !important; border:1px solid #00A552 !important;}
+        .zf-wb-white{background:#fff; border:1px solid #adadad !important;}
+        
+        .zf-wb-brandWrapper .zf-wb-brandCont{ margin:0; }
+        .zf-wb-brandWrapper .zf-wb-brandCont span{ margin-right:5px; color:#666; font-weight: 300; font-size: 13px;}
+        
+        
+        
+    
+        .zf-wb-signWrapper{ text-align: center; font-size: 14px; padding: 10px 0 20px 0; margin-bottom: 10px;}
+        .zf-wb-signWrapper p{ margin: 0 !important;font-size: 15px !important;line-height: 23px !important;margin-bottom: 15px !important;}
+        .zf-wb-signWrapper button{ padding:6px 18px; border: 1px solid #d6d6d6; font-size: 14px !important; margin: 0 5px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px; margin-top: 5px;}
+        
+        .zf-wb-dropWrapper{ border:1px solid #d6d6d6; position: relative; height:32px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px; overflow: hidden;}
+        .zf-wb-dropWrapper::before{ content: "";right: 12px;top: 11px; position: absolute;width: 0; height: 0; border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 7px solid #222;}
+
+        .zf-wb-dropWrapper select{
+            position: absolute;
+            top: 0;
+            border: 0 none !important;
+            width: 100%;
+            max-width: 100%;
+            outline: none !important;
+            -moz-outline: none !important;
+            margin: 0;
+             appearance: none;
+            -moz-appearance: radio-container;
+            -webkit-appearance: none;
+            background: transparent;
+            text-overflow: '';
+             webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            text-indent: 2px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: auto;
+            font-size: 14px !important;
+            padding-bottom: 5px;
+            line-height: inherit;;
+            }
+		.zf-wb-dropWrapper select:hover{color:#444 !important;}
+        .zf-wb-dropWrapper select:focus, .zf-wb-dropWrapper select:hover, .zf-wb-dropWrapper select option{-moz-outline: none !important; outline: none !important; border:none; -moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-offset: -2px !important; color: #444;}
+         select:-moz-focusring {color: transparent !important;text-shadow: 0 0 0 #000 !important;}
+        .zf-wb-infoDiv { position: relative;border-radius: 100px;border: 2px solid #1a75ef;width: 38px;height: 38px;z-index: 9999999;padding: 5px;line-height: 33px;text-align: center;display: inline-block;margin-bottom: 15px;}
+        .zf-wb-infoDiv:before { position: absolute;content: "i";color: #1a75ef;font-size: 20px;left: 15px;font-weight: 600;top: 0;}
+        .zf-wb-signWrapper a { color: #24A68A !important;cursor: pointer;text-decoration: underline !important;box-shadow: none !important;font-size: 16px;}
+        .zf-wb-signWrapper label {margin: 0 12px !important;font-size: 15px;color: #999;cursor: default;}
+        .zf-wb-headwrap { border-bottom: 1px solid #ccc; padding: 0 0 12px 0; margin-bottom: 20px;}
+        .zf-wb-heading { padding: 0 0 0 42px;font-size: 17px;font-weight: 600;}
+        .zf-wb-backIocn { position: relative; border: 1px solid #ccc; width: 23px; height: 23px; float: left; cursor: pointer; margin: 2px 0 0 0;}
+        .zf-wb-backIocn svg { display: inline-block; width: 15px; height: 17px; stroke-width: 0; stroke: currentColor; fill: #a2a2a2; position: absolute; left: 2px; top: -1px;}
+        .zf-wb-innerWrapper span { color: #777;}
+        .zf-wb-innerWrapper a:hover { box-shadow: none !important;color: #24A68A !important;}
+        .zf-wb-innerWrapper a { color: #24A68A !important;text-decoration: underline !important;box-shadow: none !important;}
+        .zf-wb-connect-btn{ text-align: center;border-top: none;}        
+        .zf-wb-errorCont .zf-wb-dropWrapper { border: 1px solid #ff0000;}
+        .zf-wb-loading{ text-align: center;}
+        .zf-wb-loading p{ display: inline;padding: 0 10px 0 0px !important;}
+        .zf-wb-lightblue { background: #E3F0FF; color: #153C69; border: 1px solid #C8E1FE !important;
+        }
+        .zf-wb-dropWrapper select{height: 32px;}
+
+    /*loading animation */
+.zf-wb-spinner { text-align: center;display: inline;position: relative;top: 2px;}
+.zf-wb-spinner > div {
+width: 11px;
+height: 11px;
+background-color: #333;
+
+border-radius: 100%;
+display: inline-block;
+-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.zf-wb-spinner .bounce1 {
+-webkit-animation-delay: -0.32s;
+animation-delay: -0.32s;
+}
+
+.zf-wb-spinner .bounce2 {
+-webkit-animation-delay: -0.16s;
+animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+0%, 80%, 100% { -webkit-transform: scale(0) }
+40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+0%, 80%, 100% {
+-webkit-transform: scale(0);
+transform: scale(0);
+} 40% {
+-webkit-transform: scale(1.0);
+transform: scale(1.0);
+}
+}
+
+.zf-WpEmbeddedWrap  {
+    padding: 0 25px;
+}
+.zf-WpEmbeddedWrap .zf-WpSelectFrm .cusDropArrow {
+  top: 60px;
+}
+.embedFormUsing label {
+    font-size: 15px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+.embedFormUsing {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.cusRadioButton span {
+    margin-right: 25px;
+}
+.cusRadioButton [type="radio"]:checked, .cusRadioButton [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.cusRadioButton [type="radio"]:checked + label, .cusRadioButton [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 26px !important;
+    cursor: pointer;
+    line-height: 16px;
+    display: inline-block;
+    color: #444;
+    margin: 0;
+    font-weight: normal;
+    font-size: 15px;
+}
+.cusRadioButton [type="radio"]:checked + label:before, .cusRadioButton [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #24A68A;
+    border-radius: 100%;
+    background: #fff;
+}
+.cusRadioButton [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.cusRadioButton [type="radio"]:checked + label:after, .cusRadioButton [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: #24A68A;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.cusRadioButton [type="radio"]:not(:checked) + label {
+    color: #444;
+}
+.cusRadioButton [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.cusRadioButton {
+    margin-bottom: 20px;
+}
+
+.cusCheckBox [type="checkbox"] {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+.cusCheckBox [type="checkbox"] + label {
+   position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    line-height: 17px;
+    padding-left: 30px;
+    display: inline-block;
+    font-size: 15px;
+}
+.cusCheckBox [type="checkbox"]:not(:checked) + label:before, .cusCheckBox [type="checkbox"]:not(:checked) + .decisionCusCheckBox:before {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.cusCheckBox [type="checkbox"] + label::before{
+    
+    background-color: #fff;
+    border: 1px solid #24A68A;
+    box-sizing: content-box;
+    content: '';
+    color: #444;
+    margin-right: 7px;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+}
+.cusCheckBox [type="checkbox"]:checked + label::after{
+    content: '';
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+    transition: -webkit-transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+    transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+.cusCheckBox [type="checkbox"] + label::after {
+  background-color: transparent;
+    box-sizing: content-box;
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 7px;
+    height: 4px;
+    margin-top: calc(24px / -2 / 2 * 0.8);
+    border-style: solid;
+    border-color: #24A68A;
+    border-width: 0 0 2px 2px;
+    border-radius: 0;
+    -o-border-image: none;
+    border-image: none;
+    -webkit-transform: rotate(-45deg) scale(0);
+    transform: rotate(-45deg) scale(0);
+    transition: none;
+}
+
+.cusCheckBox {
+    margin-bottom: 3px;
+}
+
+.embedFormInputField {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.embedFormInputField span {
+    width: 45%;
+    float: left;
+}
+.embedFormInputField label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+.embedFormInputField span:last-child {
+    float: right;
+}
+.embedFormInputField input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 7px 10px;
+    font-size: 13px;
+}
+.embedIncldeParamtrs span {
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 23px;
+    position: relative;
+    left: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.embedParameterValue {
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 7px;
+}
+.embedField {
+    background: #f6f6f6;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.embedFiel_Col1 {
+    width: 240px;
+    float: left;
+    font-size: 14px;
+}
+.embedFiel_Col2 {
+    width: 200px;
+    float: left;
+    font-size: 14px;
+    margin-left: 67px;
+}
+.addparamsWrap {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+    float: left;
+    padding: 0 20px;
+}
+.intArrow {
+    border-bottom: 1px dashed #afafaf;
+    font-size: 13px;
+    font-weight: 300;
+    width: 75px;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.intArrow .arrowImg {
+    background: url(./tinymce/paramtrArrow.jpg) no-repeat;
+   width: 5px;
+    height: 10px;
+    display: block;
+    top: -4px;
+    position: absolute;
+    right: 0;
+    opacity: 0.8;
+}
+.fiedPropPlus, .fiedPropMinus{ 
+   width: 24px;
+   height: 24px;
+   background: url(./tinymce/fieldprop-plus.png) no-repeat; 
+   background-size: contain;
+   margin-top: 2px; 
+   float: left; cursor: pointer; 
+   margin-left: 15px;
+   left: 0px !important;
+}
+.fiedPropMinus {
+    background: url(./tinymce/fieldprop-minus.png) no-repeat; 
+    background-size: contain;
+    margin-left: 8px;
+}
+.addParamaFeld {
+    width: 190px;
+    float: left;
+}
+.addParamaFeld input[type="text"] {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    font-size: 13px;
+}
+input[type="text"]:disabled {
+    background: #ececec;
+}
