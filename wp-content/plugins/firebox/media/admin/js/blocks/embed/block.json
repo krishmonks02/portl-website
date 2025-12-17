@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "firebox/embed",
+  "version": "1.0.0",
+  "title": "Embed Campaign (Experimental)",
+  "description": "Embed any FireBox campaign within your posts/pages relative to your content.",
+  "category": "firebox",
+  "keywords": [
+    "embed",
+    "popup",
+    "campaign"
+  ],
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "campaign": {
+      "type": "number",
+      "default": ""
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "fb-block-embed-campaign"
+}

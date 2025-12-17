@@ -1,0 +1,2 @@
+!function(e,t){"use strict";e.FireBoxInitCloudflareTurnstile=function(){t.querySelectorAll(".firebox-form-field-turnstile").forEach(function(e){var t=e.closest(".wp-block-firebox-form"),n=turnstile.render(e);e.setAttribute("data-turnstile-widget-id",n),t.addEventListener("beforeSubmit",function(e){var t;e.defaultPrevented||((t=turnstile.getResponse(n))&&0<t.length||(e.preventDefault(),turnstile.execute(n)))}),t.addEventListener("afterSubmit",function(e){turnstile.reset(n)})})}}(window,document);
+

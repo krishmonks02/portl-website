@@ -1,0 +1,120 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "firebox/datetime",
+  "version": "1.0.0",
+  "title": "Date/Time Field",
+  "description": "Add a date/time field into your form.",
+  "category": "firebox",
+  "parent": [
+    "firebox/form",
+    "firebox/column",
+    "firebox/row",
+    "core/group"
+  ],
+  "keywords": [
+    "date",
+    "time",
+    "datetime",
+    "picker"
+  ],
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "dateSelectionMode": {
+      "type": "string",
+      "default": "single"
+    },
+    "dateFormat": {
+      "type": "string",
+      "default": "Y-m-d H:i"
+    },
+    "firstDayOfWeek": {
+      "type": "number",
+      "default": 1
+    },
+    "minDate": {
+      "type": "string",
+      "default": ""
+    },
+    "maxDate": {
+      "type": "string",
+      "default": ""
+    },
+    "enableTime": {
+      "type": "boolean",
+      "default": true
+    },
+    "time24hr": {
+      "type": "boolean",
+      "default": false
+    },
+    "minuteStep": {
+      "type": "number",
+      "default": 5
+    },
+    "inline": {
+      "type": "boolean",
+      "default": false
+    },
+    "disableMobileNativePicker": {
+      "type": "boolean",
+      "default": false
+    },
+    "fieldLabelRequiredFieldIndication": {
+      "type": "boolean",
+      "default": true
+    },
+    "fieldName": {
+      "type": "string",
+      "default": "datetime"
+    },
+    "fieldLabel": {
+      "type": "string",
+      "default": "Date/Time Field"
+    },
+    "fieldLabelFontWeight": {
+      "type": "string",
+      "default": ""
+    },
+    "helpText": {
+      "type": "string",
+      "default": ""
+    },
+    "required": {
+      "type": "boolean",
+      "default": true
+    },
+    "width": {
+      "type": "string",
+      "default": "100%"
+    },
+    "defaultValue": {
+      "type": "string",
+      "default": ""
+    },
+    "placeholder": {
+      "type": "string",
+      "default": ""
+    },
+    "cssClass": {
+      "type": "string",
+      "default": ""
+    },
+    "inputCssClass": {
+      "type": "string",
+      "default": ""
+    },
+    "hideLabel": {
+      "type": "boolean",
+      "default": false
+    },
+    "disableBrowserAutocomplete": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "editorScript": "file:./index.js"
+}

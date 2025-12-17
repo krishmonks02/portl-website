@@ -1,0 +1,14 @@
+{
+  "name": "FlyingPress",
+  "slug": "flying-press",
+  "author": "<a href='https://flyingpress.com'>FlyingPress</a>",
+  "author_profile": "https://flyingpress.com",
+  "version": "4.15.3",
+  "requires": "4.7",
+  "tested": "6.6.2",
+  "requires_php": "7.4",
+  "sections": {
+    "description": "Lightning-Fast WordPress on Autopilot",
+    "changelog": "<h4>4.15.3 - 09 October, 2024</h4><ul><li> Improvement: Add 'srsltid' to default ignore query parameters</li></ul><p>Full changelog: <a href='https://flyingpress.com/changelog/'>flyingpress.com/changelog</a></p>"
+  }
+}

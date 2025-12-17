@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "firebox/hcaptcha",
+  "version": "1.0.0",
+  "title": "hCaptcha",
+  "description": "Protect your forms from spam using hCaptcha.",
+  "category": "firebox",
+  "parent": [
+    "firebox/form",
+    "firebox/column",
+    "firebox/row",
+    "core/group"
+  ],
+  "keywords": [
+    "spam",
+    "protect",
+    "hcaptcha",
+    "captcha"
+  ],
+  "supports": {
+    "multiple": false
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "field_type": {
+      "type": "string",
+      "default": "checkbox"
+    },
+    "theme": {
+      "type": "string",
+      "default": "light"
+    },
+    "size": {
+      "type": "string",
+      "default": "normal"
+    },
+    "fieldLabelRequiredFieldIndication": {
+      "type": "boolean",
+      "default": true
+    },
+    "fieldLabel": {
+      "type": "string",
+      "default": "hCaptcha"
+    },
+    "fieldLabelFontWeight": {
+      "type": "string",
+      "default": ""
+    },
+    "helpText": {
+      "type": "string",
+      "default": ""
+    },
+    "width": {
+      "type": "string",
+      "default": "100%"
+    },
+    "cssClass": {
+      "type": "string",
+      "default": ""
+    },
+    "hideLabel": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "editorScript": "file:./index.js"
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "firebox/turnstile",
+  "version": "1.0.0",
+  "title": "Turnstile",
+  "description": "Protect your forms from spam using Cloudflare Turnstile.",
+  "category": "firebox",
+  "parent": [
+    "firebox/form",
+    "firebox/column",
+    "firebox/row",
+    "core/group"
+  ],
+  "keywords": [
+    "spam",
+    "protect",
+    "captcha",
+    "cloudflare",
+    "cloudflare turnstile",
+    "turnstile"
+  ],
+  "supports": {
+    "multiple": false
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "theme": {
+      "type": "string",
+      "default": "auto"
+    },
+    "size": {
+      "type": "string",
+      "default": "normal"
+    },
+    "fieldLabelRequiredFieldIndication": {
+      "type": "boolean",
+      "default": true
+    },
+    "fieldLabel": {
+      "type": "string",
+      "default": "Turnstile"
+    },
+    "fieldLabelFontWeight": {
+      "type": "string",
+      "default": ""
+    },
+    "helpText": {
+      "type": "string",
+      "default": ""
+    },
+    "width": {
+      "type": "string",
+      "default": "100%"
+    },
+    "cssClass": {
+      "type": "string",
+      "default": ""
+    },
+    "hideLabel": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "editorScript": "file:./index.js"
+}

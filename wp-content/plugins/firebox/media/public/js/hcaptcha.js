@@ -1,0 +1,2 @@
+!function(e,t){"use strict";e.FireBoxInitHCaptcha=function(){t.querySelectorAll(".firebox-form-field-hcaptcha").forEach(function(e){var t=e.closest(".wp-block-firebox-form"),c=hcaptcha.render(e,{callback:function(){"invisible"==e.dataset.size&&t.querySelector(".firebox-block-button-element").click()}});t.addEventListener("beforeSubmit",function(e){var t;e.defaultPrevented||((t=hcaptcha.getResponse(c))&&0<t.length||(e.preventDefault(),hcaptcha.execute(c)))}),t.addEventListener("afterSubmit",function(e){hcaptcha.reset(c)})})}}(window,document);
+

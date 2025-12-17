@@ -1,0 +1,2 @@
+var FB_DateTime_Form_Field=function(){function t(){this.init()}var e=t.prototype;return e.init=function(){this.initInstances()},e.initInstances=function(){var t=document.querySelectorAll(".fb-date-time-input");t.length&&t.forEach(function(t){var e=JSON.parse(t.getAttribute("data-config"));flatpickr.l10ns[e.locale].firstDayOfWeek=e.firstDayOfWeek,flatpickr(t,e)})},t}();document.addEventListener("DOMContentLoaded",function(){new FB_DateTime_Form_Field});
+

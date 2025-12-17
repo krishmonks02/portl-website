@@ -1,0 +1,197 @@
+.wrap.h4wp{
+  margin: 0; 
+  padding: 20px; 
+  border-radius: 0;
+}
+
+#h4wp-logo{
+  margin-bottom:20px;
+  height:100px;
+}
+#plugin-logo{
+  width:250px;
+  height: 250px;
+  float:right;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ff2z-tabs-container{
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 1.618em;
+}
+
+.tabBlock-tabs::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.tabBlock-tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tabBlock {
+    margin: 0 0 2.5rem;
+}
+
+.tabBlock-tab {
+    background: #3968cb;
+    color: #fff;
+    font-size: 16px;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 0;
+    border-right: 1px solid #3968cb;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 0.625rem 0.625rem;
+    margin: 0;
+    position: relative;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+.tabBlock-tab:last-of-type {
+    border-right-style: solid;
+}
+.tabBlock-tab::before, .tabBlock-tab::after {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+.tabBlock-tab::after {
+    background-color: transparent;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+}
+@media screen and (min-width: 700px) {
+    .tabBlock-tab {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+}
+
+@media screen AND (max-width:700px){
+	
+	.tabBlock-tab{
+	    width:100%;
+    }
+	
+}
+.tabBlock-tab .tweak_icon{
+	width:20px;
+	vertical-align: middle;
+}
+
+.tabBlock-tab.is-active {
+    position: relative;
+    background: #fff;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    color: #2c3e50;
+    z-index: 1;
+}
+
+.tabBlock-tab.is-active::after {
+    background-color: #fff;
+}
+
+.tabBlock-content {
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    padding: 1.25rem;
+}
+
+.tabBlock-pane > :last-child {
+    margin-bottom: 0;
+}
+
+#gaddon-setting-row-gftweaks_signle_form_save_entries_or_not .gaddon-setting-radio{
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+#activated_msg {
+  background-image: url('../images/ui-icons_2e83ff_256x240.png');
+  background-position: -64px -144px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#back_from_custom {
+  background-image: url('../images/ui-icons_2e83ff_256x240.png');
+  background-position: -80px -128px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#back_from_custom:hover {
+  cursor: pointer;
+}
+
+#gf2zoho_activate_submit,
+#delete_form_options,
+#gf2z_crm_update_fields_button_ID,
+#test_api_connection,
+#show_plain_pw {
+  margin-left: 20px;
+}
+
+.plugin_missing {
+  font-weight: bold;
+  color: red;
+}
+
+#plain_form {
+  min-width: 50%;
+}
+
+#settings_text {
+  list-style-type: disc;
+  padding-left: 15px;
+}
+
+#gf_number_select {
+  margin: 10px 0 0 0;
+}
+
+.top_20 {
+  margin-top: 20px;
+}
+
+.editable:hover {
+  cursor: pointer;
+}
+
+#inline_msg {
+ border: 1px solid #DFDFDF; 
+ border-radius: 0; 
+ margin: 20px 0;
+ padding: 20px;
+ background: #efefef;
+}
+
+.ff2z-ajax-loader {
+  background: url(../images/ajax-loader.gif) no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  display: none;
+  margin-left: 20px;
+}
+
+#ff2z_plain_form_table_ID label{
+	padding-left:10px;
+}

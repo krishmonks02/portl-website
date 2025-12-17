@@ -1,0 +1,58 @@
+# Copyright (C) 2025 ExactMetrics Team
+# This file is distributed under the same license as the ExactMetrics - eCommerce Addon plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: ExactMetrics - eCommerce Addon 2.5.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/exactmetrics-ecommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-11-14T14:01:46+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.13.0-alpha\n"
+"X-Domain: exactmetrics-ecommerce\n"
+
+#. Plugin Name of the plugin
+#: exactmetrics-ecommerce.php
+msgid "ExactMetrics - eCommerce Addon"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: exactmetrics-ecommerce.php
+msgid "https://www.exactmetrics.com"
+msgstr ""
+
+#. Description of the plugin
+#: exactmetrics-ecommerce.php
+msgid "Adds eCommerce tracking options to ExactMetrics"
+msgstr ""
+
+#. Author of the plugin
+#: exactmetrics-ecommerce.php
+msgid "ExactMetrics Team"
+msgstr ""
+
+#: exactmetrics-ecommerce.php:191
+msgid "Enable the ExactMetrics PRO plugin to manage auto-updates"
+msgstr ""
+
+#: exactmetrics-ecommerce.php:309
+msgid "Please install ExactMetrics Pro version 7.8.1 or newer to use the ExactMetrics eCommerce addon."
+msgstr ""
+
+#: includes/compatibility-check.php:260
+#, php-format
+msgid "Sorry, but your current version of PHP does not meet the minimum required version %1$s%2$s%3$s or newer to run ExactMetrics Ecommerce Addon properly. For information on how to upgrade your PHP version, contact your web host. %4$sClick here to return to the Dashboard%5$s."
+msgstr ""
+
+#: includes/compatibility-check.php:293
+#, php-format
+msgid "Sorry, but your WordPress version is not %1$s%2$s%3$s or newer. Please update your WordPress version and then activate ExactMetrics Ecommerce Addon. For help on how to update your WordPress %4$sclick here%5$s."
+msgstr ""
+
+#: includes/providers/woocommerce-klarna.php:42
+msgid "Please install WooCommerce Klarna Gateway version 2.5.7 or newer to use the ExactMetrics eCommerce addon."
+msgstr ""
