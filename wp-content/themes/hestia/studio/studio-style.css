@@ -1,0 +1,19 @@
+.studio-container::before,
+.studio-container::after {
+    content: none !important;
+    display: block !important;
+}
+
+.studio-container-fluid::before,
+.studio-container-fluid::after {
+    content: none !important;
+    display: block !important;
+}
+
+.studio-container,
+.studio-container-fluid {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
