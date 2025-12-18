@@ -98,8 +98,9 @@ $load_reviews = $wpdb->get_results(
 
 //Check if user is logged in
 $customer_email = '';
-$customer_id = 0;
-$loggedIn = false;
+$customer_name  = '';
+$customer_id    = 0;
+$loggedIn       = false;
 $alreadyReviewed = false;
 if ( is_user_logged_in() ) {
     $current_user   = wp_get_current_user();

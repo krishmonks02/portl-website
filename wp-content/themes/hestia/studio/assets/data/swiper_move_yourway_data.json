@@ -1,0 +1,28 @@
+{
+  "slides": [
+    {
+      "imageUrlMobile": "assets/images/studio/move-your-way/move-1-mobile.webp",
+      "imageUrl": "assets/images/studio/move-your-way/move-1.webp",
+      "label": "Fire - Cardio & HIIT",
+      "icon": "assets/images/icons/studio/water-icon.svg"
+    },
+    {
+      "imageUrlMobile": "assets/images/studio/move-your-way/move-2-mobile.webp",
+      "imageUrl": "assets/images/studio/move-your-way/move-2.webp",
+      "label": "Water - Dance & Mobility",
+      "icon": "assets/images/icons/studio/fire-icon.svg"
+    },
+    {
+      "imageUrlMobile": "assets/images/studio/move-your-way/move-1-mobile.webp",
+      "imageUrl": "assets/images/studio/move-your-way/move-1.webp",
+      "label": "Air - Yoga & Wellness",
+      "icon": "assets/images/icons/studio/water-icon.svg"
+    },
+    {
+      "imageUrlMobile": "assets/images/studio/move-your-way/move-2-mobile.webp",
+      "imageUrl": "assets/images/studio/move-your-way/move-2.webp",
+      "label": "Earth - Strength Training:",
+      "icon": "assets/images/icons/studio/fire-icon.svg"
+    }
+  ]
+}
