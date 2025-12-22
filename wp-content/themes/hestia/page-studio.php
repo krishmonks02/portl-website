@@ -36,6 +36,7 @@
     global $post;
     $product_id = $post->ID;
     $table = $wpdb->prefix . 'product_reviews_details';
+
     // echo $product_id;
 
     $results = $wpdb->get_results(
@@ -237,6 +238,10 @@
                     </li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#gallery">Gallery</a></li>
+                    <?php if(!empty($results) && count($results) > 2){ ?>
+                        <li><a href="#reviews">Reviews</a></li>
+                    <?php } ?>
+                    <li style="display: none;"><a href="#faqs">FAQs</a></li>
                 </ul>
             </div>
             <div class="portl_header_stikcy--btn">
@@ -261,65 +266,86 @@
                 </div>
             </div>
         </div>
+
         <!-- ================= BOOK A DEMO MODAL ================= -->
-        <div class="portl_modal theme_dark" id="request_modal">
-            <div class="portl_modal_inner" data-lenis-prevent>
-                <div class="portl_modal--close">
-                    <img src="<?php echo MONKS_THEME_URI; ?>studio/assets/images/icons/close.svg" class="img_fluid" alt="" />
-                </div>
-                <div class="request_modal">
-                    <div class="request_modal--img">
-                        <img src="<?php echo MONKS_THEME_URI; ?>studio/assets/images/studio/book-a-demo.jpg" class="img_fluid" alt="" />
+        <div class="portl_modal portl_form_modal theme_dark" id="request_modal">
+            <div class="portl_modal_wrapper" data-lenis-prevent>
+                <div class="portl_modal_inner">
+                    <div class="portl_modal--close">
+                        <img src="<?php echo MONKS_THEME_URI; ?>studio/assets/images/icons/close.svg" class="img_fluid" alt="" />
                     </div>
-                    <div class="request_modal_info">
-                        <!-- thank you -->
-                        <div class="request_modal_info--thank">
-                            <div class="thank--icon">
-                                <img src="<?php echo MONKS_THEME_URI; ?>studio/assets/images/icons/check-circle.svg" class="img_fluid" alt="" />
-                            </div>
-                            <div class="thank--title">Thank You</div>
-                            <div class="thank--text">We’ll get back to you shortly.</div>
-                            <div class="thank--btn">
-                                <a href="" class="primary_btn">Continue Shopping</a>
-                            </div>
+                    <div class="request_modal">
+                        <div class="request_modal--img">
+                            <img src="<?php echo MONKS_THEME_URI; ?>studio/assets/images/studio/book-a-demo.jpg" class="img_fluid" alt="" />
                         </div>
-
-                        <!-- form -->
-                        <div class="">
-                            <div class="request_modal_info--title">
-                                Book <br />
-                                a demo
+                        <div class="request_modal_info">
+                            <!-- thank you -->
+                            <div class="request_modal_info--thank">
+                                <div class="thank--icon">
+                                    <img src="<?php echo MONKS_THEME_URI; ?>studio/assets/images/icons/check-circle.svg" class="img_fluid" alt="" />
+                                </div>
+                                <div class="thank--title">Thank You</div>
+                                <div class="thank--text">We’ll get back to you shortly.</div>
+                                <div class="thank--btn">
+                                    <a href="" class="primary_btn">Continue Shopping</a>
+                                </div>
                             </div>
-                            <div class="request_modal_info--form">
-                                <form id="callback3" class="portl_form">
-                                    <div class="form_group">
-                                        <label for="name">Name</label>
-                                        <input type="text" placeholder="Name" name="username" id="name" autocomplete="name" required />
-                                    </div>
-                                    <div class="form_group">
-                                        <label for="email">Email ID</label>
-                                        <input type="email" placeholder="Email ID" name="useremail" id="email" autocomplete="email" required />
-                                    </div>
-                                    <div class="form_group">
-                                        <label for="mobile">Mobile</label>
-                                        <input type="tel" placeholder="Mobile Number" name="usermobile" id="mobile" autocomplete="tel" required />
-                                    </div>
-                                    <div class="form_group">
-                                        <label for="city">City</label>
-                                        <input type="text" placeholder="City" name="usercity" id="city" autocomplete="text" required />
-                                    </div>
-                                    <!-- <div class="form_group">
-                                                    <label for="city">Select City</label>
-                                                    <select name="" id="city" required>
-                                                        <option value="">Select City</option>
-                                                        <option value="0">Bangalore, KA</option>
-                                                        <option value="1">Bangalore, KA</option>
-                                                        <option value="2">Bangalore, KA</option>
-                                                    </select>
-                                                </div> -->
-                                    <button id="studiosubmitbtn" type="submit" class="primary_btn">Submit</button>
-                                </form>
 
+                            <!-- duplicate submission -->
+                            <div class="request_modal_info--error">
+                                <div class="error--icon thank--icon" style="display: none;">⚠️</div>
+                                <div class="error--title thank--title">Oops!</div>
+                                <div class="error--text thank--text"></div>
+                                <div class="thank--btn">
+                                    <a href="" class="primary_btn">Continue Shopping</a>
+                                </div>
+                            </div>
+
+                            <!-- form -->
+                            <div class="request_modal_info--formbox">
+                                <div class="request_modal_info--title">
+                                    Book a demo
+                                </div>
+                                <div class="request_modal_info--form">
+                                    <form id="callback3" class="portl_form">
+                                        <div class="form_group">
+                                            <label for="name">First Name</label>
+                                            <input type="text" placeholder="Enter First Name" name="firstname" id="firstname" autocomplete="firstname" required />
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="name">Last Name</label>
+                                            <input type="text" placeholder="Enter Last Name" name="lastname" id="lastname" autocomplete="lastname" required />
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="email">Email ID</label>
+                                            <input type="email" placeholder="Email ID" name="useremail" id="email" autocomplete="email" required />
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="mobile">Mobile</label>
+                                            <input type="tel" placeholder="Mobile Number" name="usermobile" id="mobile" autocomplete="tel" required />
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="city">City</label>
+                                            <input type="text" placeholder="City" name="usercity" id="city" autocomplete="text" required />
+                                        </div>
+                                        <!-- <div class="form_group">
+                                                        <label for="city">Select City</label>
+                                                        <select name="" id="city" required>
+                                                            <option value="">Select City</option>
+                                                            <option value="0">Bangalore, KA</option>
+                                                            <option value="1">Bangalore, KA</option>
+                                                            <option value="2">Bangalore, KA</option>
+                                                        </select>
+                                                    </div> -->
+                                        <button id="studiosubmitbtn" type="button" class="primary_btn">Submit</button>
+                                    </form>
+
+                                    <!-- HIDDEN Formidable form -->
+                                    <div class="frm-hidden-form" style="display:none;">
+                                        <?php echo do_shortcode('[formidable id="3" ajax="1"]'); ?>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1261,7 +1287,7 @@
         <?php } ?>
 
         <!-- ================= FAQs ================= -->
-        <div class="portl_faqs">
+        <div id="faqs" class="portl_faqs">
             <div class="space_140"></div>
             <div class="container">
                 <div class="portl_accordion">
@@ -1661,6 +1687,9 @@
     <!-- portl js -->
     <script src="<?php echo MONKS_THEME_URI; ?>studio/assets/js/portl.js"></script>
 
+    <!-- studio js -->
+    <script src="<?php echo MONKS_THEME_URI; ?>studio/studio-js.js"></script>
+
     <!-- Initialize video preloading for studio page -->
     <script>
         (function() {
@@ -1793,5 +1822,4 @@
         });
         })();
     </script>
-
 </body>

@@ -455,113 +455,113 @@ add_action('wp_ajax_nopriv_custom_form_submit_2', 'handle_custom_form_submission
 
 
 // handle form submission for studio page
-function handle_custom_form_submission_3()
-{
-	// Verify nonce for security
-	// check_ajax_referer('custom_ajax_nonce', 'security');
+// function handle_custom_form_submission_3()
+// {
+// 	// Verify nonce for security
+// 	// check_ajax_referer('custom_ajax_nonce', 'security');
 
-	// Check if all required POST data is present
-	if (!isset($_POST['username'], $_POST['useremail'], $_POST['usermobile'], $_POST['usercity'])) {
-		wp_send_json_error(array('message' => 'Missing required fields.'));
-		wp_die();
-	}
+// 	// Check if all required POST data is present
+// 	if (!isset($_POST['username'], $_POST['useremail'], $_POST['usermobile'], $_POST['usercity'])) {
+// 		wp_send_json_error(array('message' => 'Missing required fields.'));
+// 		wp_die();
+// 	}
 
-	// Capture and sanitize posted data
-	$username = sanitize_text_field($_POST['username']);
-	$useremail = sanitize_email($_POST['useremail']);
-	$usermobile = sanitize_text_field($_POST['usermobile']);
-	$usercity = sanitize_text_field($_POST['usercity']);
+// 	// Capture and sanitize posted data
+// 	$username   = sanitize_text_field($_POST['username']);
+// 	$useremail  = sanitize_email($_POST['useremail']);
+// 	$usermobile = sanitize_text_field($_POST['usermobile']);
+// 	$usercity   = sanitize_text_field($_POST['usercity']);
 
-	// Validate required fields
-	if (empty($username) || empty($useremail) || empty($usermobile) || empty($usercity)) {
-		wp_send_json_error(array('message' => 'All fields are required.'));
-		wp_die();
-	}
+// 	// Validate required fields
+// 	if (empty($username) || empty($useremail) || empty($usermobile) || empty($usercity)) {
+// 		wp_send_json_error(array('message' => 'All fields are required.'));
+// 		wp_die();
+// 	}
 
-	// Validate email format
-	if (!is_email($useremail)) {
-		wp_send_json_error(array('message' => 'Invalid email address.'));
-		wp_die();
-	}
+// 	// Validate email format
+// 	if (!is_email($useremail)) {
+// 		wp_send_json_error(array('message' => 'Invalid email address.'));
+// 		wp_die();
+// 	}
 
-	// Validate mobile number (e.g., numeric and minimum length)
-	if (!preg_match('/^\d{10}$/', $usermobile)) {
-		wp_send_json_error(array('message' => 'Invalid mobile number. It must be 10 digits.'));
-		wp_die();
-	}
+// 	// Validate mobile number (e.g., numeric and minimum length)
+// 	if (!preg_match('/^\d{10}$/', $usermobile)) {
+// 		wp_send_json_error(array('message' => 'Invalid mobile number. It must be 10 digits.'));
+// 		wp_die();
+// 	}
 
-	// Prepare the data to send to Contact Form 7 REST API
-	$form_id = 6260; // Replace with your actual Contact Form 7 form ID
-	$api_url = home_url("/wp-json/contact-form-7/v1/contact-forms/{$form_id}/feedback");
+// 	// Prepare the data to send to Contact Form 7 REST API
+// 	$form_id = 6260; // Replace with your actual Contact Form 7 form ID
+// 	$api_url = home_url("/wp-json/contact-form-7/v1/contact-forms/{$form_id}/feedback");
 
-	$body = array(
-		'username' => $username,
-		'useremail' => $useremail,
-		'usermobile' => $usermobile,
-		'usercity' => $usercity,
-		'_wpcf7_unit_tag' => $form_id
-	);
+// 	$body = array(
+// 		'username' => $username,
+// 		'useremail' => $useremail,
+// 		'usermobile' => $usermobile,
+// 		'usercity' => $usercity,
+// 		'_wpcf7_unit_tag' => $form_id
+// 	);
 
-	// Log the payload being sent
-	// echo 'Contact Form 7 API URL: ' . $api_url;
-	// print_r($body);
+// 	// Log the payload being sent
+// 	// echo 'Contact Form 7 API URL: ' . $api_url;
+// 	// print_r($body);
 
-	$curl = curl_init();
+// 	$curl = curl_init();
 
 
 
-	curl_setopt_array($curl, array(
-		CURLOPT_URL => 	$api_url,
-		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_ENCODING => '',
-		CURLOPT_MAXREDIRS => 10,
-		CURLOPT_TIMEOUT => 0,
-		CURLOPT_FOLLOWLOCATION => true,
-		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-		CURLOPT_CUSTOMREQUEST => 'POST',
-		CURLOPT_POSTFIELDS => $body,
-	));
+// 	curl_setopt_array($curl, array(
+// 		CURLOPT_URL => 	$api_url,
+// 		CURLOPT_RETURNTRANSFER => true,
+// 		CURLOPT_ENCODING => '',
+// 		CURLOPT_MAXREDIRS => 10,
+// 		CURLOPT_TIMEOUT => 0,
+// 		CURLOPT_FOLLOWLOCATION => true,
+// 		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+// 		CURLOPT_CUSTOMREQUEST => 'POST',
+// 		CURLOPT_POSTFIELDS => $body,
+// 	));
 
-	$headers = array(
-		'Content-Type: multipart/form-data',
-		'User-Agent: PHP cURL'
-	);
-	curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-	// Capture verbose output
-	// $verbose = fopen('php://temp', 'w+');
-	// curl_setopt($curl, CURLOPT_STDERR, $verbose);
+// 	$headers = array(
+// 		'Content-Type: multipart/form-data',
+// 		'User-Agent: PHP cURL'
+// 	);
+// 	curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+// 	// Capture verbose output
+// 	// $verbose = fopen('php://temp', 'w+');
+// 	// curl_setopt($curl, CURLOPT_STDERR, $verbose);
 
-	$response = curl_exec($curl);
-	$error = curl_error($curl);
-	curl_close($curl);
+// 	$response = curl_exec($curl);
+// 	$error = curl_error($curl);
+// 	curl_close($curl);
 
-	// Rewind verbose log and output to error log for debugging
-	// rewind($verbose);
-	// $verbose_log = stream_get_contents($verbose);
-	// fclose($verbose);
-	// error_log("cURL verbose information: \n" . $verbose_log);
+// 	// Rewind verbose log and output to error log for debugging
+// 	// rewind($verbose);
+// 	// $verbose_log = stream_get_contents($verbose);
+// 	// fclose($verbose);
+// 	// error_log("cURL verbose information: \n" . $verbose_log);
 
-	// Handle response
-	if ($error) {
-		wp_send_json_error(array('message' => 'cURL Error: ' . $error));
-	} else {
-		$response_body = json_decode($response, true);
-		error_log('Response: ' . print_r($response_body, true)); // Log the response for debugging
+// 	// Handle response
+// 	if ($error) {
+// 		wp_send_json_error(array('message' => 'cURL Error: ' . $error));
+// 	} else {
+// 		$response_body = json_decode($response, true);
+// 		error_log('Response: ' . print_r($response_body, true)); // Log the response for debugging
 
-		// wp_send_json($response_body);
-		if (isset($response_body['status']) && $response_body['status'] === 'mail_sent') {
-			wp_send_json_success(array('message' => 'Your message has been sent successfully.'));
-		} else {
-			$error_message = isset($response_body['message']) ? $response_body['message'] : 'Unknown error occurred.';
-			wp_send_json_error(array('message' => 'Failed to send message: ' . $error_message));
-		}
-	}
+// 		// wp_send_json($response_body);
+// 		if (isset($response_body['status']) && $response_body['status'] === 'mail_sent') {
+// 			wp_send_json_success(array('message' => 'Your message has been sent successfully.'));
+// 		} else {
+// 			$error_message = isset($response_body['message']) ? $response_body['message'] : 'Unknown error occurred.';
+// 			wp_send_json_error(array('message' => 'Failed to send message: ' . $error_message));
+// 		}
+// 	}
 
-	// Always die in an AJAX handler
-	wp_die();
-}
-add_action('wp_ajax_custom_form_submit_3', 'handle_custom_form_submission_3');
-add_action('wp_ajax_nopriv_custom_form_submit_3', 'handle_custom_form_submission_3');
+// 	// Always die in an AJAX handler
+// 	wp_die();
+// }
+// add_action('wp_ajax_custom_form_submit_3', 'handle_custom_form_submission_3');
+// add_action('wp_ajax_nopriv_custom_form_submit_3', 'handle_custom_form_submission_3');
 
 
 //add_action('woocommerce_review_order_before_submit', 'add_disclaimer_under_checkout_button');
