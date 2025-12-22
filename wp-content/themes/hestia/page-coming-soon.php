@@ -111,7 +111,7 @@ get_header('ultragym');
                                 personal trainer</div>
                         </div>
                         <div class="portl_multi--btns">
-                            <a href="http://wordpress-1409177-6078590.cloudwaysapps.com/home/" class="primary_btn">Learn More</a>
+                            <a href="<?php echo MONKS_HOME_URI; ?>product/studio/" class="primary_btn">Learn More</a>
                             <!-- <a href="" class="primary_btn_outline">Buy Now</a> -->
                         </div>
                     </div>

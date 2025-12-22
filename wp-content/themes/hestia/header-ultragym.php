@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="portl_header--list">
                 <ul class="">
                     <li><a href="<?php echo MONKS_HOME_URI; ?>product/ultragym/">Ultragym</a></li>
-                    <li><a href="<?php echo MONKS_HOME_URI; ?>home/">Portl Studio</a></li>
+                    <li><a href="<?php echo MONKS_HOME_URI; ?>product/studio/">Portl Studio</a></li>
                     <li><a href="<?php echo MONKS_HOME_URI; ?>about-us/">About us</a></li>
                     <!-- <li><a href="<?php echo MONKS_HOME_URI; ?>shop/">All Products</a></li> -->
                     <!-- <li><a href="<?php echo MONKS_HOME_URI; ?>experience-center/">Experience Center</a></li> -->

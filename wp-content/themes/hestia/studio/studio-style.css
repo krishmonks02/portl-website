@@ -17,3 +17,53 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+.studio_page p, .studio_page h1, .studio_page h2, .studio_page h3, .studio_page h4, .studio_page h5, .studio_page h6 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: none;
+    text-transform: none;
+}
+
+.studio_page .btn,button,input[type=button],input[type=submit] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+    white-space: normal;
+    text-transform:none;
+}
+
+.studio_page .portl_form_modal.open {
+    display: block;
+    overflow: scroll;
+}
+.studio_page .portl_form_modal .portl_modal_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    min-height: 100%;
+    width: 100%;
+}
+.request_modal_info--error {
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.25s linear;
+}
+.request_modal_info--error.active {
+    pointer-events: all;
+    opacity: 1;
+}
