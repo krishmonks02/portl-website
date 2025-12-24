@@ -76,31 +76,36 @@
             wp_send_json_error(['message' => 'Unable to verify code']);
         }
 
-        // $body = json_decode(wp_remote_retrieve_body($response), true);
+        $body = json_decode(wp_remote_retrieve_body($response), true);
 
-        $body = [
-            'success' => true,
-            'message' => 'Campaign code is valid and redeemable',
-            'data' => [
-                'campaignId'        => '692ae913f7d3ad796b8e5ffc',
-                'name'              => 'New Year Special',
-                'description'       => 'Flat 20% off for all users',
-                'discountType'      => 'PERCENTAGE',
-                'discountValue'     => 20,
-                'isActive'          => true,
-                'minOrderValue'     => 300,
-                'maxDiscountLimit'  => 200,
-                'code'              => '0RY34O',
-            ],
-        ];
+        // $body = [
+        //     'success' => true,
+        //     'message' => 'Campaign code is valid and redeemable',
+        //     'data' => [
+        //         'campaignId'        => '692ae913f7d3ad796b8e5ffc',
+        //         'name'              => 'New Year Special',
+        //         'description'       => 'Flat 20% off for all users',
+        //         'discountType'      => 'PERCENTAGE',
+        //         'discountValue'     => 20,
+        //         'isActive'          => true,
+        //         'minOrderValue'     => 300,
+        //         'maxDiscountLimit'  => 200,
+        //         'code'              => '0RY34O',
+        //     ],
+        // ];
 
         if (!empty($body['success']) && !empty($body['data'])) {
             WC()->session->set('campaign_data', $body['data']);
-            wp_send_json_success(['message' => $body['message']]);
+            wp_send_json_success([
+                'message' => $body['message'],
+                'data'    => $body['data'],
+            ]);
         }
 
         WC()->session->__unset('campaign_data');
-        wp_send_json_error(['message' => $body['message'] ?? 'Invalid code']);
+        wp_send_json_error([
+            'message' => $body['message'] ?? 'Invalid code'
+        ]);
     }
 
 
@@ -139,39 +144,89 @@
         $discount = min($discount, $subtotal);
         if ($discount <= 0) return;
 
+
+        // $label = esc_html($campaign['name'] ?? 'Referral Discount');
         // $cart->add_fee(
-        //     esc_html($campaign['name'] ?? 'Referral Discount'),
+        //     $label,
         //     -$discount,
-        //     false
+        //     false,
         // );
 
-        $label = esc_html($campaign['name'] ?? 'Referral Discount');
-
         $cart->add_fee(
-            $label,
+            __('Referral', 'woocommerce'),
             -$discount,
-            false,
+            false
         );
-
     }
 
 
     // Redeem Campaign After Order Completion -------------------------
-    add_action('woocommerce_thankyou', 'ug_redeem_campaign_code');
-    function ug_redeem_campaign_code($order_id) {
+    // add_action('woocommerce_thankyou', 'ug_redeem_campaign_code');
+    // function ug_redeem_campaign_code($order_id) {
+
+    //     $campaign = WC()->session->get('campaign_data');
+    //     if (!$campaign) return;
+
+    //     $order = wc_get_order($order_id);
+    //     if (!$order) return;
+
+    //     $phone = $order->get_billing_phone();
+
+    //     $order->update_meta_data('_campaign_code', $campaign['code'] ?? '');
+    //     $order->save();
+
+    //     wp_remote_request(
+    //         'https://itultragym.rainvi.co/api/v1/user/campaign/redeem-campaign-code',
+    //         [
+    //             'method'  => 'PATCH',
+    //             'headers' => [
+    //                 'Accept'       => 'application/json',
+    //                 'Content-Type' => 'application/json',
+    //             ],
+    //             'body' => wp_json_encode([
+    //                 'code'         => $campaign['code'] ?? '',
+    //                 'mobileNumber' => $phone,
+    //             ]),
+    //             'timeout' => 15,
+    //         ]
+    //     );
+
+    //     WC()->session->__unset('campaign_data');
+    // }
+
+    add_action('woocommerce_checkout_create_order', 'ug_attach_campaign_to_order', 20, 2);
+    function ug_attach_campaign_to_order($order, $data) {
 
         $campaign = WC()->session->get('campaign_data');
-        if (!$campaign) return;
+        if (empty($campaign) || empty($campaign['code'])) return;
+
+        $order->update_meta_data('_campaign_code', $campaign['code']);
+        $order->update_meta_data('_campaign_data', $campaign);
+    }
+
+
+    add_action('woocommerce_order_status_processing', 'ug_redeem_campaign_code_once');
+    add_action('woocommerce_order_status_completed', 'ug_redeem_campaign_code_once');
+    function ug_redeem_campaign_code_once($order_id) {
 
         $order = wc_get_order($order_id);
         if (!$order) return;
 
+        // HARD LOCK – prevent double execution
+        if ($order->get_meta('_campaign_redeem_lock') === 'yes') {
+            return;
+        }
+
+        $campaign_code = $order->get_meta('_campaign_code');
+        if (!$campaign_code) return;
+
         $phone = $order->get_billing_phone();
 
-        $order->update_meta_data('_campaign_code', $campaign['code'] ?? '');
+        // Set lock immediately
+        $order->update_meta_data('_campaign_redeem_lock', 'yes');
         $order->save();
 
-        wp_remote_request(
+        $response = wp_remote_request(
             'https://itultragym.rainvi.co/api/v1/user/campaign/redeem-campaign-code',
             [
                 'method'  => 'PATCH',
@@ -180,14 +235,33 @@
                     'Content-Type' => 'application/json',
                 ],
                 'body' => wp_json_encode([
-                    'code'         => $campaign['code'] ?? '',
+                    'code'         => $campaign_code,
                     'mobileNumber' => $phone,
                 ]),
                 'timeout' => 15,
             ]
         );
 
-        WC()->session->__unset('campaign_data');
+        error_log('Redeem API Raw: ' . print_r($response, true));
+        error_log('Redeem API Res Body: ' . wp_remote_retrieve_body($response));
+        if (is_wp_error($response)) {
+            $order->update_meta_data('_campaign_redeem_error', $response->get_error_message());
+            $order->update_meta_data('_campaign_redeemed', 'failed');
+            $order->save();
+            return;
+        }
+
+        $status_code = wp_remote_retrieve_response_code($response);
+        $body        = json_decode(wp_remote_retrieve_body($response), true);
+
+        if ($status_code === 200) {
+            $order->update_meta_data('_campaign_redeemed', 'yes');
+        } else {
+            $order->update_meta_data('_campaign_redeemed', 'failed');
+            $order->update_meta_data('_campaign_redeem_response', $body);
+        }
+
+        $order->save();
     }
 
     // Add "Remove" Link Next to Discount in Cart/Checkout -------------------------
@@ -199,7 +273,12 @@
         }
 
         // Match fee by campaign name (dynamic)
-        if ($fee->name !== $campaign['name']) {
+        // if ($fee->name !== $campaign['name']) {
+        //     return $html;
+        // }
+
+        // Match by fixed (Referral)
+        if ($fee->name !== __('Referral', 'woocommerce')) {
             return $html;
         }
 
@@ -210,7 +289,6 @@
         return $html . $remove;
 
     }, 10, 2);
-
 
 
     // Clear Campaign Data on Cart Emptied / Item Removed -------------------------
@@ -239,7 +317,7 @@
     }
 
 
-    // Add Referral Code Banner on Checkout -------------------------
+    // Add Referral Code Banner on Checkout page -------------------------
     add_action('woocommerce_review_order_before_payment', 'ug_checkout_referral_like_coupon');
     function ug_checkout_referral_like_coupon() {
 
@@ -278,12 +356,21 @@
         <?php
     }
 
-    
-
-
     // add_filter('woocommerce_coupons_enabled', function ($enabled) {
     //     if (is_checkout() && WC()->session->get('campaign_data')) {
     //         return false;
     //     }
     //     return $enabled;
     // });
+
+    // display on cms order
+    add_action('woocommerce_admin_order_data_after_billing_address', function ($order) {
+
+        $code = $order->get_meta('_campaign_code');
+        $redeemed = $order->get_meta('_campaign_redeemed');
+
+        if (!$code) return;
+
+        echo '<p><strong>Referral Code:</strong> ' . esc_html($code) . '</p>';
+        echo '<p><strong>Redeemed:</strong> ' . esc_html($redeemed ?: 'no') . '</p>';
+    });

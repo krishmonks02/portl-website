@@ -33,6 +33,9 @@ if ( function_exists( 'max_mega_menu_is_enabled' ) ) {
 // Load starter content
 require_once( HESTIA_PHP_INCLUDE . 'compatibility/class-hestia-starter-content.php' );
 
+// Campaign / Referral Discount Logic
+require_once( HESTIA_PHP_INCLUDE . 'helpers/referral-discount.php' );
+
 
 /**
  * Adds notice for PHP < 5.3.29 hosts.
