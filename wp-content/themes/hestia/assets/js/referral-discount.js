@@ -4,12 +4,9 @@ jQuery(function ($) {
 
     // Initial sync on page load
     syncUIState();
-
-    // Close Refferal form on checkout page
     refreshWoo();
-    // closeReferralForm();
 
-
+    // for cart
     $(document.body).on('updated_cart_totals', function () {
         syncUIState();
     });
@@ -77,7 +74,7 @@ jQuery(function ($) {
 
     // Remove referral
     $(document).on('click', '#ug_remove_referral', function (e) {
-        console.log('Remove referral code clicked');
+        // console.log('Remove referral code clicked');
         // e.preventDefault();
 
         $.post(ugreferral.ajax_url, {
@@ -116,7 +113,7 @@ jQuery(function ($) {
 
     // When coupon banner is clicked
     $(document.body).on('click', '.woocommerce-form-coupon-toggle a.showcoupon', function (e) {
-        console.log('Coupon toggle clicked');
+        // console.log('Coupon toggle clicked');
 
         // Close referral form
         $('.ug-checkout-referral-form').slideUp();
@@ -136,7 +133,7 @@ jQuery(function ($) {
         $('#referral_message').text('');
         $('#apply_referral_code').prop('disabled', disabled).toggleClass('is-disabled', disabled);
         $('#referral_code').prop('disabled', disabled).toggleClass('is-disabled', disabled);
-        console.log('Referral code inputs disabled and cleared:', disabled);
+        // console.log('Referral code inputs disabled and cleared:', disabled);
     }
     function disableCoupon(disabled = true) {
         // $('form.checkout_coupon button, .woocommerce-cart .coupon button').prop('disabled', disabled);
@@ -147,7 +144,7 @@ jQuery(function ($) {
             .prop('disabled', disabled)
             .toggleClass('is-disabled', disabled);
 
-        console.log('Coupon inputs disabled:', disabled);
+        // console.log('Coupon inputs disabled:', disabled);
     }
 
     // Helps to enable/disable and update UI of refferal and coupon code
@@ -162,7 +159,7 @@ jQuery(function ($) {
         if (couponApplied) {
             disableReferral(true);
             resetReferralField(true);
-            console.log('Coupon is applied - disabling referral');
+            // console.log('Coupon is applied - disabling referral');
         } else {
             disableReferral(false);
         }

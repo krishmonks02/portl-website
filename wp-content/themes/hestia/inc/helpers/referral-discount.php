@@ -78,22 +78,6 @@
 
         $body = json_decode(wp_remote_retrieve_body($response), true);
 
-        // $body = [
-        //     'success' => true,
-        //     'message' => 'Campaign code is valid and redeemable',
-        //     'data' => [
-        //         'campaignId'        => '692ae913f7d3ad796b8e5ffc',
-        //         'name'              => 'New Year Special',
-        //         'description'       => 'Flat 20% off for all users',
-        //         'discountType'      => 'PERCENTAGE',
-        //         'discountValue'     => 20,
-        //         'isActive'          => true,
-        //         'minOrderValue'     => 300,
-        //         'maxDiscountLimit'  => 200,
-        //         'code'              => '0RY34O',
-        //     ],
-        // ];
-
         if (!empty($body['success']) && !empty($body['data'])) {
             WC()->session->set('campaign_data', $body['data']);
             wp_send_json_success([
@@ -225,6 +209,9 @@
         // Set lock immediately
         $order->update_meta_data('_campaign_redeem_lock', 'yes');
         $order->save();
+
+        error_log('Reddemed code ' . $campaign_code);
+        error_log('Reddemed mob number ' . $phone);
 
         $response = wp_remote_request(
             'https://itultragym.rainvi.co/api/v1/user/campaign/redeem-campaign-code',
