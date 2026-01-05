@@ -65,3 +65,7 @@
 .ug-checkout-referral-form p{
     margin-bottom: 10px !important;
 }
+
+.woocommerce-checkout .referral-code-wrapper{
+    display: none !important;
+}

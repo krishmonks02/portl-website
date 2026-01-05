@@ -715,3 +715,15 @@ add_action('woocommerce_thankyou',function($order_id){
 		echo '<p id="order_item_count" style="display:none;">'.$count.'</p>';
 	}
 });
+
+//code to fix add_to_cart query parameter duplicate
+add_filter( 'woocommerce_add_to_cart_redirect', function( $url ) {
+
+    // Only redirect when add-to-cart comes via URL param (Buy Now)
+    if ( isset($_REQUEST['add-to-cart']) && ! is_admin() ) {
+        return wc_get_cart_url();
+    }
+
+    return $url;
+
+}, 10, 1 );

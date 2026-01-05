@@ -8,17 +8,31 @@
 
 <?php
     // Add Referral Code Field to Cart Page -------------------------
-    add_action('woocommerce_cart_actions', 'add_referral_code_field', 20);
-    function add_referral_code_field() { ?>
-        <div id="referral-code-wrapper">
-            <h5 class="input_label">Have a referral code?</h5>
-            <div class="referral-code-input form-group">
-                <input type="text" id="referral_code" placeholder="Enter referral code" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control" disabled="false">
-                <button type="button" id="apply_referral_code">Apply</button>
+    if (class_exists('WooCommerce')) {
+        add_action('woocommerce_cart_actions', function () { 
+            // show ONLY on cart page
+            if (!is_cart() || is_checkout()) {
+                return;
+            } ?>
+            <div id="referral-code-wrapper">
+                <h5 class="input_label">Have a referral code?</h5>
+                <div class="referral-code-input form-group">
+                    <input
+                        type="text"
+                        id="referral_code"
+                        placeholder="Enter referral code"
+                        autocomplete="off"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                        class="form-control"
+                    >
+                    <button type="button" id="apply_referral_code">Apply</button>
+                </div>
+                <p id="referral_message"></p>
             </div>
-            <p id="referral_message"></p>
-        </div>
-    <?php } 
+        <?php }, 20);
+    }
 ?>
 
 <?php
@@ -100,11 +114,16 @@
         if (is_admin() && !defined('DOING_AJAX')) return;
         if (!$cart || $cart->is_empty()) return;
 
-        // Prevent duplicate execution
-        if (did_action('woocommerce_cart_calculate_fees') >= 2) return;
-
         $campaign = WC()->session->get('campaign_data');
         if (empty($campaign)) return;
+
+        // Prevent duplicate execution
+        // if (did_action('woocommerce_cart_calculate_fees') >= 2) return;
+        foreach ($cart->get_fees() as $fee) {
+            if ($fee->name === __('Referral', 'woocommerce')) {
+                return;
+            }
+        }
 
         $subtotal = (float) $cart->get_subtotal();
 
@@ -143,41 +162,21 @@
         );
     }
 
+    // re-apply the discount when the order is created
+    // add_action('woocommerce_checkout_create_order_fee_item', 'ug_persist_campaign_fee', 20, 4);
+    // function ug_persist_campaign_fee($item, $fee_key, $fee, $order) {
 
-    // Redeem Campaign After Order Completion -------------------------
-    // add_action('woocommerce_thankyou', 'ug_redeem_campaign_code');
-    // function ug_redeem_campaign_code($order_id) {
+    //     if ($fee->name !== __('Referral', 'woocommerce')) {
+    //         return;
+    //     }
 
-    //     $campaign = WC()->session->get('campaign_data');
-    //     if (!$campaign) return;
-
-    //     $order = wc_get_order($order_id);
-    //     if (!$order) return;
-
-    //     $phone = $order->get_billing_phone();
-
-    //     $order->update_meta_data('_campaign_code', $campaign['code'] ?? '');
-    //     $order->save();
-
-    //     wp_remote_request(
-    //         'https://itultragym.rainvi.co/api/v1/user/campaign/redeem-campaign-code',
-    //         [
-    //             'method'  => 'PATCH',
-    //             'headers' => [
-    //                 'Accept'       => 'application/json',
-    //                 'Content-Type' => 'application/json',
-    //             ],
-    //             'body' => wp_json_encode([
-    //                 'code'         => $campaign['code'] ?? '',
-    //                 'mobileNumber' => $phone,
-    //             ]),
-    //             'timeout' => 15,
-    //         ]
-    //     );
-
-    //     WC()->session->__unset('campaign_data');
+    //     $item->set_name($fee->name);
+    //     $item->set_amount($fee->amount);
+    //     $item->set_total($fee->total);
     // }
 
+
+    // redeemed Applied code with Order Meta
     add_action('woocommerce_checkout_create_order', 'ug_attach_campaign_to_order', 20, 2);
     function ug_attach_campaign_to_order($order, $data) {
 
@@ -187,7 +186,6 @@
         $order->update_meta_data('_campaign_code', $campaign['code']);
         $order->update_meta_data('_campaign_data', $campaign);
     }
-
 
     add_action('woocommerce_order_status_processing', 'ug_redeem_campaign_code_once');
     add_action('woocommerce_order_status_completed', 'ug_redeem_campaign_code_once');
@@ -269,9 +267,11 @@
             return $html;
         }
 
-        $remove = sprintf(
-            '<a href="javascript:void(0)" id="ug_remove_referral" class="ug-remove-referral" style="margin-left:10px;">[Remove]</a>',
-        );
+        // not compatable with all version
+        // $remove = sprintf(
+        //     '<a href="javascript:void(0)" id="ug_remove_referral" class="ug-remove-referral" style="margin-left:10px;">[Remove]</a>',
+        // );
+        $remove = '<a href="javascript:void(0)" id="ug_remove_referral" class="ug-remove-referral" style="margin-left:10px;">[Remove]</a>';
 
         return $html . $remove;
 
@@ -311,13 +311,13 @@
         // if (!WC()->session->get('campaign_data')) return;
         ?>
 
-        <!-- Referral Toggle (Coupon-like) -->
-        <div class="ug-referral-toggle woocommerce-form-coupon-toggle">
-            <div class="woocommerce-info">
-                Have a referral code?
-                <a href="javascript:void(0)" class="show-referral">Click here to add</a>
+            <!-- Referral Toggle (Coupon-like) -->
+            <div class="ug-referral-toggle woocommerce-form-coupon-toggle">
+                <div class="woocommerce-info">
+                    Have a referral code?
+                    <a href="javascript:void(0)" class="show-referral">Click here to add</a>
+                </div>
             </div>
-        </div>
 
             <!-- Referral Form (Hidden like coupon) -->
             <div class="ug-checkout-referral-form" style="display:none;">

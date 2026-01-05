@@ -6,6 +6,19 @@ jQuery(function ($) {
     syncUIState();
     refreshWoo();
 
+    // remove on checkout page
+    if ($('body').hasClass('woocommerce-checkout')) {
+        $('#referral-code-wrapper, .referral-code-wrapper').remove(); // simple and sufficient
+    }
+
+    // observe and remove in case late load
+    if ($('body').hasClass('woocommerce-checkout')) {
+        const observer = new MutationObserver(() => {
+            $('#referral-code-wrapper, .referral-code-wrapper ').remove();
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    }
+
     // for cart
     $(document.body).on('updated_cart_totals', function () {
         syncUIState();
@@ -71,6 +84,7 @@ jQuery(function ($) {
             }
         });
     });
+
 
     // Remove referral
     $(document).on('click', '#ug_remove_referral', function (e) {
