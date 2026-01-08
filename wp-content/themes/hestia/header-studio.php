@@ -152,7 +152,7 @@
                 }
             }
             .sticky-review-rating-label .label-wrap{
-                height:138px;
+                height:fit-content;
             }
         </style>
     </head>

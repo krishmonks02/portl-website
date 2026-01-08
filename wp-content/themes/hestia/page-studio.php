@@ -1638,8 +1638,7 @@
             <div class="reviews-redirect-btn" style="background-color: #FFF;">
                 <div class="label-wrap">
                     Rated <?php echo getPartialFillStarSvg(100,0); ?>
-                    <span class="rating-txt"><?= esc_html($average_rating) ?></span>
-                    
+                    <span class="rating-txt"><?= esc_html($average_rating)?>/5</span>
                 </div>
             </div>
         </div>
