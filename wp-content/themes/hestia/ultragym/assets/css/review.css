@@ -875,7 +875,7 @@ select:focus {
 }
 .sticky-review-rating-label{
     position: fixed;
-    top: 42%;
+    top: 30%;
     right: 0;
     transform: rotate(180deg);
     background: #fff;
@@ -1006,5 +1006,8 @@ select:focus {
         width: 100%;
         background-color: white;
         z-index: 10;
+    }
+    .sticky-review-rating-label{
+        top: 25%;
     }
 }
